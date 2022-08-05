@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: 'Set up Python'
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
-           python-version: 3.7
+           python-version: '3.x'
       - name: 'Install requirements'
         run: pip install requests
       - name: 'Working'
@@ -34,4 +34,4 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.personal_token }}
+          github_token: ${{ secrets.GITACTION_TOKEN }}
