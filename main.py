@@ -44,6 +44,44 @@ for i in range(2):
     temp = f'https://nodefree.org/dy/{yearMonth}/{yearMonthDay}.txt'
     sub_url.append(temp)
 
+def downloadTodayV2rayNode(){
+    yearMonth = datetime.datetime.now().strftime("%Y%m")
+    yearMonthDay = datetime.datetime.now().strftime("%Y%m%d")
+    todayUrl = f'https://nodefree.org/dy/{yearMonth}/{yearMonthDay}.txt'
+
+    rq = requests.get(todayUrl)
+    if (rq.status_code != 200):
+        ym = (datetime.datetime.now() -
+                 datetime.timedelta(days=1)).strftime("%Y%m")
+        ymd = (datetime.datetime.now() -
+                        datetime.timedelta(days=1)).strftime("%Y%m%d")
+        yestodayUrl = f'https://nodefree.org/dy/{ym}/{ymd}.txt'
+        rq = requests.get(yestodayUrl)
+    
+    _file = open('nodefree.txt', 'w', encoding='utf-8')
+    _file.write(req.content)
+    _file.close()
+}
+
+def downloadTodayClashNode(){
+    yearMonth = datetime.datetime.now().strftime("%Y%m")
+    yearMonthDay = datetime.datetime.now().strftime("%Y%m%d")
+    todayUrl = f'https://nodefree.org/dy/{yearMonth}/{yearMonthDay}.yaml'
+
+    rq = requests.get(todayUrl)
+    if (rq.status_code != 200):
+        ym = (datetime.datetime.now() -
+                 datetime.timedelta(days=1)).strftime("%Y%m")
+        ymd = (datetime.datetime.now() -
+                        datetime.timedelta(days=1)).strftime("%Y%m%d")
+        yestodayUrl = f'https://nodefree.org/dy/{ym}/{ymd}.yaml'
+        rq = requests.get(yestodayUrl)
+    
+    _file = open('nodefree.yaml', 'w', encoding='utf-8')
+    _file.write(req.content)
+    _file.close()
+}
+
 
 
 def parseVmess(links:list):
@@ -95,8 +133,11 @@ def generateSubFile(merged_link: list):
     _file.write(res.decode("utf-8"))
     _file.close()
 
-# 下载订阅链接将其合并
+# 下载订阅链接将其合并1
 sub_link = getSubNodeContent(sub_url)
 vmess_link = parseVmess(sub_link)
 # 合并整理完成的节点
 generateSubFile(vmess_link)
+
+downloadTodayV2rayNode()
+downloadTodayClashNode()
