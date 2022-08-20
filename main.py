@@ -44,7 +44,7 @@ for i in range(2):
     temp = f'https://nodefree.org/dy/{yearMonth}/{yearMonthDay}.txt'
     sub_url.append(temp)
 
-def downloadTodayV2rayNode(){
+def downloadTodayV2rayNode():
     yearMonth = datetime.datetime.now().strftime("%Y%m")
     yearMonthDay = datetime.datetime.now().strftime("%Y%m%d")
     todayUrl = f'https://nodefree.org/dy/{yearMonth}/{yearMonthDay}.txt'
@@ -58,12 +58,12 @@ def downloadTodayV2rayNode(){
         yestodayUrl = f'https://nodefree.org/dy/{ym}/{ymd}.txt'
         rq = requests.get(yestodayUrl)
     
-    _file = open('nodefree.txt', 'w', encoding='utf-8')
-    _file.write(req.content)
+    _file = open('nodefree.txt', 'wb')
+    _file.write(rq.content)
     _file.close()
-}
 
-def downloadTodayClashNode(){
+
+def downloadTodayClashNode():
     yearMonth = datetime.datetime.now().strftime("%Y%m")
     yearMonthDay = datetime.datetime.now().strftime("%Y%m%d")
     todayUrl = f'https://nodefree.org/dy/{yearMonth}/{yearMonthDay}.yaml'
@@ -77,11 +77,9 @@ def downloadTodayClashNode(){
         yestodayUrl = f'https://nodefree.org/dy/{ym}/{ymd}.yaml'
         rq = requests.get(yestodayUrl)
     
-    _file = open('nodefree.yaml', 'w', encoding='utf-8')
-    _file.write(req.content)
+    _file = open('nodefree.yaml', 'wb')
+    _file.write(rq.content)
     _file.close()
-}
-
 
 
 def parseVmess(links:list):
