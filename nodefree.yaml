@@ -15,38 +15,43 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇺🇸 _US_美国, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 2, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: false}
-  - {name: 🇯🇵 _JP_日本, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: false}
-  - {name: 🇳🇱 _NL_荷兰, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇹🇼 _TW_台湾, server: download1tw.windowsupdate1.com, port: 28443, type: trojan, password: 6248895b-4255-4f07-9479-d198bc1eb8db, sni: glc.hruqoaw.cn, skip-cert-verify: false}
+  - {name: 🇮🇳 _IN_印度, server: 13in.networklinkpro.net, port: 443, type: trojan, password: e392bfdd-d4ce-4df2-9534-fef23f037121, skip-cert-verify: false}
+  - {name: 🇯🇵 _JP_日本, server: jp2.sanfen001.pics, port: 443, type: trojan, password: d45e6245-926b-4283-8c72-91e229d6c5f5, sni: jp1.sanfen001.pics, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国, server: hk2.sanfen001.pics, port: 443, type: trojan, password: d45e6245-926b-4283-8c72-91e229d6c5f5, sni: hk1.sanfen001.pics, skip-cert-verify: false}
+  - {name: 🇸🇬 _SG_新加坡, server: sg2.sanfen001.pics, port: 443, type: trojan, password: d45e6245-926b-4283-8c72-91e229d6c5f5, sni: sg1.sanfen001.pics, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 2, server: 16us.networklinkpro.net, port: 443, type: trojan, password: e392bfdd-d4ce-4df2-9534-fef23f037121, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 3, server: 27fr.networklinkpro.net, port: 443, type: trojan, password: e392bfdd-d4ce-4df2-9534-fef23f037121, skip-cert-verify: false}
   - {name: 🇫🇷 _FR_法国, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
-  - {name: 🇳🇱 _NL_荷兰 2, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
   - {name: 🇫🇷 _FR_法国 2, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
-  - {name: 🇯🇵 _JP_日本 2, server: 168.138.44.176, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, skip-cert-verify: false}
+  - {name: 🇳🇱 _NL_荷兰, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇳🇱 _NL_荷兰 2, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 4, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ca.0112233.xyz}}}
+  - {name: 🇸🇬 _SG_新加坡 2, server: 139.162.55.131, port: 443, type: vmess, uuid: 12960d11-1fb8-4eff-d26a-8969d44a4b19, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
   - {name: 🇫🇷 _FR_法国 3, server: content-provider12.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 3, server: node-do-us-1.gitspeed.cyou, port: 443, type: trojan, password: pNDxTmWL, skip-cert-verify: false}
-  - {name: 🇯🇵 _JP_日本 3, server: 168.138.43.89, port: 443, type: trojan, password: d06a3f01-1ff0-4792-9b8e-a5a604bc74a2, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 4, server: 138.2.113.248, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: false}
+  - {name: 🇳🇱 _NL_荷兰 3, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
+  - {name: 🇭🇰 _HK_香港->🇯🇵_JP_日本, server: 219.76.13.180, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: false}
   - {name: 🇫🇷 _FR_法国 4, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, skip-cert-verify: false}
-  - {name: 🇮🇱 _IL_以色列, server: 129.159.139.101, port: 443, type: vmess, uuid: b7519a6f-c1de-4667-e606-b60c65d19078, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇳🇱 _NL_荷兰 3, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: false}
-  - {name: 🇬🇧 _GB_英国, server: 132.145.51.172, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: false}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港, server: 14.29.124.174, port: 11020, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇸🇬 _SG_新加坡, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港, server: 165.154.244.29, port: 443, type: vmess, uuid: f8c3fbfe-9f65-4861-b824-f0049aa55810, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 5, server: 161.129.34.102, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: default_name, server: idc1.vpn-akcelluler.my.id, port: 443, type: trojan, password: idc117okt, sni: idc1.vpn-akcelluler.my.id, skip-cert-verify: false}
+  - {name: 🇭🇰 _HK_香港->🇸🇬_SG_新加坡, server: 219.76.13.175, port: 443, type: trojan, password: ZFYOpKqD8uEClpZ2ya83cyCDalwSOYz3F3eCxnBD4eSXNSR5R0aAATj7I3x69g, sni: golang.protocolbuffer.com, skip-cert-verify: false}
+  - {name: default_name 2, server: 103.176.78.153, port: 443, type: trojan, password: idc117okt, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 5, server: kr1.sanfen001.pics, port: 443, type: trojan, password: d45e6245-926b-4283-8c72-91e229d6c5f5, sni: kr1.sanfen001.pics, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 6, server: kr2.sanfen001.pics, port: 443, type: trojan, password: d45e6245-926b-4283-8c72-91e229d6c5f5, sni: kr1.sanfen001.pics, skip-cert-verify: false}
+  - {name: 🇯🇵 _JP_日本 2, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 _US_美国 7, server: 161.129.34.102, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 _US_美国 8, server: lc-kr02-direct01.lc-kr02.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lc-kr02-direct01.lc-kr02.lc-node.com}}}
 proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇭🇰 _HK_香港
+      - 🇭🇰 _HK_香港->🇯🇵_JP_日本
+      - 🇭🇰 _HK_香港->🇸🇬_SG_新加坡
   - name: 🇯🇵 日本节点
     type: select
     proxies:
       - 🇯🇵 _JP_日本
+      - 🇭🇰 _HK_香港->🇯🇵_JP_日本
       - 🇯🇵 _JP_日本 2
-      - 🇯🇵 _JP_日本 3
   - name: 🇺🇲 美国节点
     type: select
     proxies:
@@ -55,14 +60,19 @@ proxy-groups:
       - 🇺🇸 _US_美国 3
       - 🇺🇸 _US_美国 4
       - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
-      - DIRECT
+      - 🇹🇼 _TW_台湾
   - name: 🇸🇬 狮城节点
     type: select
     proxies:
       - 🇸🇬 _SG_新加坡
+      - 🇸🇬 _SG_新加坡 2
+      - 🇭🇰 _HK_香港->🇸🇬_SG_新加坡
   - name: 🇰🇷 韩国节点
     type: select
     proxies:
@@ -70,34 +80,39 @@ proxy-groups:
   - name: 🌍 其他地区
     type: select
     proxies:
-      - 🇬🇧 _GB_英国
+      - 🇮🇳 _IN_印度
   - name: ♻️ 专线节点
     type: select
     proxies:
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
+      - DIRECT
   - name: ♻️ 手动切换
     type: select
     proxies:
-      - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
+      - 🇹🇼 _TW_台湾
+      - 🇮🇳 _IN_印度
       - 🇯🇵 _JP_日本
-      - 🇳🇱 _NL_荷兰
-      - 🇫🇷 _FR_法国
-      - 🇳🇱 _NL_荷兰 2
-      - 🇫🇷 _FR_法国 2
-      - 🇯🇵 _JP_日本 2
-      - 🇫🇷 _FR_法国 3
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 _JP_日本 3
-      - 🇺🇸 _US_美国 4
-      - 🇫🇷 _FR_法国 4
-      - 🇮🇱 _IL_以色列
-      - 🇳🇱 _NL_荷兰 3
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
+      - 🇺🇸 _US_美国
       - 🇸🇬 _SG_新加坡
-      - 🇭🇰 _HK_香港
+      - 🇺🇸 _US_美国 2
+      - 🇺🇸 _US_美国 3
+      - 🇫🇷 _FR_法国
+      - 🇫🇷 _FR_法国 2
+      - 🇳🇱 _NL_荷兰
+      - 🇳🇱 _NL_荷兰 2
+      - 🇺🇸 _US_美国 4
+      - 🇸🇬 _SG_新加坡 2
+      - 🇫🇷 _FR_法国 3
+      - 🇳🇱 _NL_荷兰 3
+      - 🇭🇰 _HK_香港->🇯🇵_JP_日本
+      - 🇫🇷 _FR_法国 4
+      - default_name
+      - 🇭🇰 _HK_香港->🇸🇬_SG_新加坡
+      - default_name 2
       - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇯🇵 _JP_日本 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
   - name: 📲 聊天软件
     type: select
     proxies:
